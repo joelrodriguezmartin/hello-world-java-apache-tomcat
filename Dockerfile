@@ -3,7 +3,7 @@ LABEL maintainer="joloeol@gmail.com"
 
 ARG WAR_FILE=target/*.war
 
-ADD ${ARG} /usr/local/tomcat/webapps/
+ADD ${WAR_FILE} /usr/local/tomcat/webapps/
 
 EXPOSE 80
 
