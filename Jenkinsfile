@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Test Integration') {
             steps {
-                sh 'wget -m localhost:8082'
+                sh 'wget -m localhost:8082/app-web-joel'
             }
         }
     }
