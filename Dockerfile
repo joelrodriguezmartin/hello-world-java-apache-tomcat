@@ -5,6 +5,6 @@ ARG WAR_FILE=target/*.war
 
 ADD ${WAR_FILE} /usr/local/tomcat/webapps/
 
-EXPOSE 8082
+EXPOSE 80
 
 CMD ["catalina.sh", "run"]

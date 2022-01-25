@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'docker build -t hello-world-java-apache-tomcat .'
-                sh 'docker run -d --rm -p 8082:8082 hello-world-java-apache-tomcat'
+                sh 'docker run -d --rm -p 8082:8080 hello-world-java-apache-tomcat'
             }
         }
         stage('Test Integration') {
