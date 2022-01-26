@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Test Integration') {
             steps {
-                sh 'grep JOEL | wget -m localhost:8082/app-web-joel'
+                sh 'curl -s localhost:8082/app-web-joel | grep "JOEL'
             }
         }
     }
